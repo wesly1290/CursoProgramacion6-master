@@ -8,7 +8,16 @@ using System.Threading.Tasks;
 
 namespace WBL
 {
-    public class VehiculoService
+    public interface IVehiculoService
+    {
+        Task<DBEntity> Create(VehiculoEntity entity);
+        Task<DBEntity> Delete(VehiculoEntity entity);
+        Task<IEnumerable<VehiculoEntity>> Get();
+        Task<VehiculoEntity> GetById(VehiculoEntity entity);
+        Task<DBEntity> Update(VehiculoEntity entity);
+    }
+
+    public class VehiculoService : IVehiculoService
     {
 
         private readonly IDataAccess sql;
@@ -22,7 +31,7 @@ namespace WBL
         {
             try
             {
-                var result = sql.QueryAsync<VehiculoEntity,MarcaVehiculoEntity>("VehiculoObtener", "VehiculoId, MarcaVehiculoId");
+                var result = sql.QueryAsync<VehiculoEntity, MarcaVehiculoEntity>("VehiculoObtener", "VehiculoId, MarcaVehiculoId");
 
                 return await result;
 

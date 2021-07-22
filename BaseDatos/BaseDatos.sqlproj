@@ -72,5 +72,16 @@
     <Build Include="dbo\StoreProcedures\VehiculoInsertar.sql" />
     <Build Include="dbo\StoreProcedures\VehiculoObtener.sql" />
     <Build Include="dbo\StoreProcedures\MarcaVehiculoLista.sql" />
+    <Build Include="dbo\StoreProcedures\AgenciaActualizar.sql" />
+    <Build Include="dbo\StoreProcedures\AgenciaEliminar.sql" />
+    <Build Include="dbo\StoreProcedures\AgenciaInsertar.sql" />
+    <Build Include="dbo\StoreProcedures\AgenciaObtener.sql" />
+    <Build Include="dbo\StoreProcedures\CatalogoCantonLista.sql" />
+    <Build Include="dbo\StoreProcedures\CatalogoDistritoLista.sql" />
+    <Build Include="dbo\StoreProcedures\CatalogoProvinciaLista.sql" />
+    <Build Include="dbo\Tables\Agencias.sql" />
+    <Build Include="dbo\Tables\CatalogoCanton.sql" />
+    <Build Include="dbo\Tables\CatalogoDistrito.sql" />
+    <Build Include="dbo\Tables\CatalogoProvincia.sql" />
   </ItemGroup>
 </Project>

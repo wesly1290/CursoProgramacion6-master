@@ -8,6 +8,8 @@
   <ItemGroup>
     <Content Remove="wwwroot\App\MarcaVehiculo\Edit.ts" />
     <Content Remove="wwwroot\App\MarcaVehiculo\Grid.ts" />
+    <Content Remove="wwwroot\App\Vehiculo\Edit.ts" />
+    <Content Remove="wwwroot\App\Vehiculo\Grid.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +24,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\App\MarcaVehiculo\Edit.ts" />
     <TypeScriptCompile Include="wwwroot\App\MarcaVehiculo\Grid.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Vehiculo\Edit.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Vehiculo\Grid.ts" />
   </ItemGroup>
 
 </Project>
